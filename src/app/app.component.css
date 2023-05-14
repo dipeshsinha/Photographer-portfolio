@@ -1,0 +1,28 @@
+.body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0rem;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0d031f;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    z-index: 20;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border: transparent;
+    opacity: 1;
+    transition: 0.1s;
+  }

@@ -1,0 +1,14 @@
+<div id="image-track" 
+[style.transform]="'translate(-' + scrollPercent + '% , -50%)'"
+[style.transition]="'0.05s'"
+(mousedown)="onMouseDown($event)"
+(mousedown)="onMouseUp($event)">
+
+
+    <img *ngFor="let imageName of images" 
+    [src]="imageLocation + '' + imageName + '.JPG'" 
+    [style.object-position]=" scrollPercent + 20 + '% center'"
+    class="image">
+
+
+</div>
